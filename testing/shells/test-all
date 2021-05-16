@@ -1,0 +1,89 @@
+#!/bin/bash
+
+#CONSTANTS
+GREEN="\e[32m"
+RED="\e[91m"
+MAG="\e[35m"
+YEL="\e[33m"
+RSTCOLOR="\e[0m"
+
+# input
+ARGV=$@
+exe="./test"
+MFILEPATH="../bytecodes"
+
+function main {
+	#CLEAN WORKSPACE
+	rm -rf tmp
+	mkdir tmp
+
+	if ! [ -f "$exe" ]; then
+		echo "$exe not found. Use make to create it"
+		exit
+	fi
+
+	if [[ $# -eq 0 ]]; then
+		echo "NO ARGS"
+		DETAILS=false
+		multitest
+	else
+		echo "ARGS"
+		DETAILS=true
+		unittest $1
+	fi
+}
+
+function unittest {
+	MFILE=$1
+	OFILE=$(echo "stdout-${MFILE%.m}")
+	OPATH=$(echo "./tmp/$OFILE")
+
+	RFILE="expected-${MFILE%.m}"
+	RFILEPATH="./expected-out"
+	MFILEPATH="../bytecodes"
+
+	FPATH_MFILE="$MFILEPATH/$MFILE"
+	FPATH_RFILE="$RFILEPATH/$RFILE"
+
+	printf "$MFILE: "
+	cmd="$exe $MFILEPATH/$MFILE"
+	eval $cmd &> $OPATH
+	if [ -f "$FPATH_RFILE" ]; then
+		if cmp -s $OPATH $FPATH_RFILE; then
+			printf $GREEN"OK\n"$RSTCOLOR
+			TMPCOLOR=$GREEN
+		else
+			printf $RED"FAILED\n"$RSTCOLOR
+			TMPCOLOR=$RED
+		fi
+	else
+		printf $MAG"NO_REF\n"$RSTCOLOR
+		TMPCOLOR=$MAG
+	fi
+
+	if [ $DETAILS == true ]; then
+		echo "------------------"
+		printf "[${TMPCOLOR}GOT${RSTCOLOR}]\n"
+		cat $OPATH
+		printf "[${TMPCOLOR}EXPECTED${RSTCOLOR}]\n"
+		cat $FPATH_RFILE
+		echo "------------------"
+		printf "\n"
+	fi
+}
+
+function multitest {
+	for file in $MFILEPATH/*
+	do
+		MFILE=$(echo ${file} | cut -d '/' -f3)
+		if [[ $MFILE == 'README.md' ]]; then
+			continue
+		fi
+
+		unittest $MFILE
+	rm -rf tmp
+	done
+}
+
+#RUNNING PROGRAM HERE
+main $ARGV

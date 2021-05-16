@@ -1,0 +1,16 @@
+#!/bin/bash
+# ­┌­­─────────────────────────────────────────────────────────────┐
+# │ Filenae: copy-files											│
+# │																│
+# │ This script copies all expected files  						│
+# │			 													│
+# ­­­└─────────────────────────────────────────────────────────────┘
+
+rm ../../expected-out/*
+
+cp expected-add/*  ../../expected-out/.
+cp expected-pint/* ../../expected-out/.
+cp expected-pop/*  ../../expected-out/.
+cp expected-nop/*  ../../expected-out/.
+cp expected-pupa/* ../../expected-out/.
+cp expected-swap/* ../../expected-out/.

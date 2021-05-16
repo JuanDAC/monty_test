@@ -1,0 +1,56 @@
+#!/bin/bash
+# ­┌­­─────────────────────────────────────────────────────────────┐
+# │ Filenae: make-folder										│
+# │																│
+# │ This file contains scripts to create specific folders		│
+# │ with the possibility of choking the numbers of the files	│
+# │																│
+# ­­­└─────────────────────────────────────────────────────────────┘
+
+
+# ================================================= #
+
+# OPCODE SWAP
+
+# Make empty files .m <- uncomment to use
+# mkdir swap-files
+# cd swap-files
+# touch {0..4}-swap.m
+
+# Make empty expected files <- uncomment to use
+# cd  ../../testing/expected-out/
+# mkdir expected-swap
+# cd expected-swap
+# touch expected-{0..4}-swap
+
+# ================================================= #
+
+# OPCODE ADD
+
+# Make empty files .m
+# COMMANDS:
+# mkdir add-files
+# cd add-files
+# touch {0..4}-add.m
+
+# Make empty expected files
+# COMMANDS:
+# cd  ../../testing/expected-out/
+# mkdir expected-add
+# cd expected-add
+# touch expected-{0..4}-add
+
+# ================================================= #
+
+# Make empty files .m
+# COMMANDS:
+# mkdir nop-files
+# cd nop-files
+# touch {0..4}-nop.m
+
+# Make empty expected files
+# COMMANDS:
+# cd  ../../testing/expected-out/
+# mkdir expected-nop
+# cd expected-nop
+# touch expected-{0..4}-nop

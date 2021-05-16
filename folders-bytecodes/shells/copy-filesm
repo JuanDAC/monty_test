@@ -1,0 +1,20 @@
+#!/bin/bash
+# ­┌­­─────────────────────────────────────────────────────────────┐
+# │ Filenae: copy-filesm										│
+# │																│
+# │ This script copies all .m files from a folder determined	│
+# │			 													│
+# ­­­└─────────────────────────────────────────────────────────────┘
+
+# Clean old files
+
+rm ../../bytecodes/*.m # It works Add Validation if there are not before
+
+cp ../add-files/*.m  ../../bytecodes/.
+cp ../pint-files/*.m ../../bytecodes/.
+cp ../pop-files/*.m  ../../bytecodes/.
+cp ../nop-files/*.m  ../../bytecodes/.
+cp ../pupa-files/*.m ../../bytecodes/.
+cp ../swap-files/*.m ../../bytecodes/.
+
+# rm *.m # Remove the files in Bytecodes
