@@ -1,0 +1,128 @@
+#!/bin/bash
+# ­┌­­─────────────────────────────────────────────────────────────┐
+# │ Filenae: make-folder										│
+# │																│
+# │ This file contains scripts to create specific folders		│
+# │ with the possibility of choking the numbers of the files	│
+# │																│
+# ­­­└─────────────────────────────────────────────────────────────┘
+
+
+# ================================================= #
+
+# OPCODE SWAP
+
+# Make empty files .m <- uncomment to use
+# cd ../folders-bytecodes/
+# mkdir swap-files
+# cd swap-files
+# touch {0..4}-swap.m
+
+# Make empty expected files <- uncomment to use
+# cd ../folders-bytecodes/
+# cd ../../folders-expected-out/
+# mkdir expected-swap
+# cd expected-swap
+# touch expected-{0..4}-swap
+
+# ================================================= #
+
+# OPCODE ADD
+
+# Make empty files .m
+# COMMANDS:
+# cd ../folders-bytecodes/
+# mkdir add-files
+# cd add-files
+# touch {0..4}-add.m
+
+# Make empty expected files
+# COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-add
+# cd expected-add
+# touch expected-{0..4}-add
+
+# ================================================= #
+
+# Make empty files .m
+
+# COMMANDS:
+# cd ../folders-bytecodes/
+# mkdir nop-files
+# cd nop-files
+# touch {0..4}-nop.m
+
+# Make empty expected files
+# COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-nop
+# cd expected-nop
+# touch expected-{0..4}-nop
+
+# ================================================= #
+
+# Make empty files .m to OPCODE: SUB
+
+# COMMANDS:
+# cd ../folders-bytecodes/
+# mkdir sub-files
+# cd sub-files
+# touch {0..4}-sub.m
+
+# Make empty expected files
+# COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-sub
+# cd expected-sub
+# touch expected-{0..4}-sub
+
+# ================================================= #
+
+# Make empty files .m to OPCODE: DIV
+
+# COMMANDS:
+# cd ../folders-bytecodes/
+# mkdir div-files
+# cd div-files
+# touch {0..4}-div.m
+
+# # Make empty expected files
+# # COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-div
+# cd expected-div
+# touch expected-{0..5}-div
+# ================================================= #
+
+# Make empty files .m to OPCODE: MUL
+
+# COMMANDS:
+# cd ../folders-bytecodes/
+# mkdir mul-files
+# cd mul-files
+# touch {0..4}-mul.m
+
+# # Make empty expected files
+# # COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-mul
+# cd expected-mul
+# touch expected-{0..4}-mul
+
+# ================================================= #
+
+# Make empty files .m to OPCODE: MOD
+
+# COMMANDS:
+cd ../folders-bytecodes/
+mkdir mod-files
+cd mod-files
+touch {0..5}-mod.m
+
+# Make empty expected files
+# COMMANDS:
+cd ../../folders-expected-out/
+mkdir expected-mod
+cd expected-mod
+touch expected-{0..5}-mod
