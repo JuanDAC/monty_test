@@ -1,0 +1,60 @@
+#!/bin/bash
+# ­┌­­─────────────────────────────────────────────────────────────┐
+# │ Filenae: copy-filesm										│
+# │																│
+# │ This script copies all .m files from a folder determined	│
+# │			 													│
+# ­­­└─────────────────────────────────────────────────────────────┘
+
+
+# Clean old files
+GREEN="\e[32m"
+RED="\e[91m"
+MAG="\e[5mBlink"
+YEL="\e[33m"
+RSTCOLOR="\e[0m"
+CYAN="\e[96m"
+BOLDMAG="\e[1m\e[95m"
+
+# rm ../../bytecodes/*.m # It works Add Validation if there are not before
+# Copy all files .m
+printf "${CYAN}Copy all .m files to folder bytecodes${RSTCOLOR}\n"
+
+cp ../folders-bytecodes/add-files/*.m  ../bytecodes/.
+cp ../folders-bytecodes/sub-files/*.m  ../bytecodes/.
+cp ../folders-bytecodes/div-files/*.m  ../bytecodes/.
+cp ../folders-bytecodes/mul-files/*.m  ../bytecodes/.
+cp ../folders-bytecodes/rotl-files/*.m  ../bytecodes/.
+cp ../folders-bytecodes/pint-files/*.m ../bytecodes/.
+cp ../folders-bytecodes/pop-files/*.m  ../bytecodes/.
+cp ../folders-bytecodes/pupa-files/*.m ../bytecodes/.
+cp ../folders-bytecodes/pchar-files/*.m ../bytecodes/.
+cp ../folders-bytecodes/pstr-files/*.m ../bytecodes/.
+cp ../folders-bytecodes/nop-files/*.m  ../bytecodes/.
+cp ../folders-bytecodes/comments-files/*.m ../bytecodes/.
+
+
+# rm ../bytecodes/*.m #delete all files .m
+
+# COPY ALL FILES .m
+
+printf "${CYAN}Copy all .m files to folder expected-out${RSTCOLOR}\n"
+# COPY ALL EXPECTED FILES
+cp ../folders-expected-out/expected-add/* ../expected-out/.
+cp ../folders-expected-out/expected-div/* ../expected-out/.
+cp ../folders-expected-out/expected-nop/* ../expected-out/.
+cp ../folders-expected-out/expected-pop/* ../expected-out/.
+cp ../folders-expected-out/expected-rotl/* ../expected-out/.
+cp ../folders-expected-out/expected-add/* ../expected-out/.
+cp ../folders-expected-out/expected-mod/* ../expected-out/.
+cp ../folders-expected-out/expected-pchar/* ../expected-out/.
+cp ../folders-expected-out/expected-pstr/* ../expected-out/.
+cp ../folders-expected-out/expected-sub/* ../expected-out/.
+cp ../folders-expected-out/expected-comments/* ../expected-out/.
+cp ../folders-expected-out/expected-mul/* ../expected-out/.
+cp ../folders-expected-out/expected-pint/* ../expected-out/.
+cp ../folders-expected-out/expected-pupa/* ../expected-out/.
+cp ../folders-expected-out/expected-swap/* ../expected-out/.
+
+# rm ../expected-out/*  #DELETE ALL EXPECTED FILES FILES
+

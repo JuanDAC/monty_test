@@ -115,14 +115,81 @@
 # Make empty files .m to OPCODE: MOD
 
 # COMMANDS:
-cd ../folders-bytecodes/
-mkdir mod-files
-cd mod-files
-touch {0..5}-mod.m
+# cd ../folders-bytecodes/
+# mkdir mod-files
+# cd mod-files
+# touch {0..5}-mod.m
 
-# Make empty expected files
+# # Make empty expected files
+# # COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-mod
+# cd expected-mod
+# touch expected-{0..5}-mod
+
+# ================================================= #
+
+# Make empty files .m to OPCODE: COMMENTS
+
 # COMMANDS:
-cd ../../folders-expected-out/
-mkdir expected-mod
-cd expected-mod
-touch expected-{0..5}-mod
+# cd ../folders-bytecodes/
+# mkdir comments-files
+# cd comments-files
+# touch {0..2}-comments.m
+
+# # Make empty expected files
+# # COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-comments
+# cd expected-comments
+# touch expected-{0..2}-comments
+
+# ================================================= #
+
+# Make empty files .m to PCHAR
+
+# COMMANDS:
+
+# cd ../folders-bytecodes/
+# mkdir pchar-files
+# cd pchar-files
+# touch {0..6}-pchar.m
+
+# # Make empty expected files
+# # COMMANDS:
+
+# cd ../../folders-expected-out/
+# mkdir expected-pchar
+# cd expected-pchar
+# touch expected-{0..6}-pchar
+
+# ================================================= #
+
+# Make empty files .m to PSTR
+
+# COMMANDS:
+# cd ../folders-bytecodes/
+# mkdir pstr-files
+# cd pstr-files
+# touch {0..10}-pstr.m
+
+# # # Make empty expected files
+# # # COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-pstr
+# cd expected-pstr
+# touch expected-{0..10}-pstr
+
+
+# COMMANDS: rotl
+# cd ../folders-bytecodes/
+# mkdir rotl-files
+# cd rotl-files
+# touch {0..6}-rotl.m
+
+# # # Make empty expected files
+# # # COMMANDS:
+# cd ../../folders-expected-out/
+# mkdir expected-rotl
+# cd expected-rotl
+# touch expected-{0..6}-rotl

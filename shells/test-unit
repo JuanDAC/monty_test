@@ -144,38 +144,141 @@ BOLDMAG="\e[1m\e[95m"
 # UNIT TEST MUL (Uncomment to use them)
 # ------------------------------------- #
 
-printf "${CYAN}Test opcode: ${BOLDMAG}MUL ${RSTCOLOR}\n"
-# gcc $FLAGS ../*.c -o test
-printf "${YEL}File: ${BOLDMAG} 0-mul.m ${RSTCOLOR}\n"
-.././test $BTCODES/mul-files/0-mul.m
-printf "${YEL}File: ${BOLDMAG} 1-mul.m ${RSTCOLOR}\n"
-.././test $BTCODES/mul-files/1-mul.m
-printf "${YEL}File: ${BOLDMAG} 2-mul.m ${RSTCOLOR}\n"
-.././test $BTCODES/mul-files/2-mul.m
-printf "${YEL}File: ${BOLDMAG} 3-mul.m ${RSTCOLOR}\n"
-.././test $BTCODES/mul-files/3-mul.m
-printf "${YEL}File: ${BOLDMAG} 4-mul.m ${RSTCOLOR}\n"
-.././test $BTCODES/mul-files/4-mul.m
+# printf "${CYAN}Test opcode: ${BOLDMAG}MUL ${RSTCOLOR}\n"
+# # gcc $FLAGS ../*.c -o test
+# printf "${YEL}File: ${BOLDMAG} 0-mul.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mul-files/0-mul.m
+# printf "${YEL}File: ${BOLDMAG} 1-mul.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mul-files/1-mul.m
+# printf "${YEL}File: ${BOLDMAG} 2-mul.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mul-files/2-mul.m
+# printf "${YEL}File: ${BOLDMAG} 3-mul.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mul-files/3-mul.m
+# printf "${YEL}File: ${BOLDMAG} 4-mul.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mul-files/4-mul.m
 
 
 # ------------------------------------- #
 # UNIT TEST MOD (Uncomment to use them)
 # ------------------------------------- #
 
-printf "${CYAN}Test opcode: ${BOLDMAG}MOD ${RSTCOLOR}\n"
-# gcc $FLAGS ../*.c -o test
-printf "${YEL}File: ${BOLDMAG} 0-mod.m ${RSTCOLOR}\n"
-.././test $BTCODES/mod-files/0-mod.m
-printf "${YEL}File: ${BOLDMAG} 1-mod.m ${RSTCOLOR}\n"
-.././test $BTCODES/mod-files/1-mod.m
-printf "${YEL}File: ${BOLDMAG} 2-mod.m ${RSTCOLOR}\n"
-.././test $BTCODES/mod-files/2-mod.m
-printf "${YEL}File: ${BOLDMAG} 3-mod.m ${RSTCOLOR}\n"
-.././test $BTCODES/mod-files/3-mod.m
-printf "${YEL}File: ${BOLDMAG} 4-mod.m ${RSTCOLOR}\n"
-.././test $BTCODES/mod-files/4-mod.m
-printf "${YEL}File: ${BOLDMAG} 5-mod.m ${RSTCOLOR}\n"
-.././test $BTCODES/mod-files/5-mod.m
+# printf "${CYAN}Test opcode: ${BOLDMAG}MOD ${RSTCOLOR}\n"
+# # gcc $FLAGS ../*.c -o test
+# printf "${YEL}File: ${BOLDMAG} 0-mod.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mod-files/0-mod.m
+# printf "${YEL}File: ${BOLDMAG} 1-mod.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mod-files/1-mod.m
+# printf "${YEL}File: ${BOLDMAG} 2-mod.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mod-files/2-mod.m
+# printf "${YEL}File: ${BOLDMAG} 3-mod.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mod-files/3-mod.m
+# printf "${YEL}File: ${BOLDMAG} 4-mod.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mod-files/4-mod.m
+# printf "${YEL}File: ${BOLDMAG} 5-mod.m ${RSTCOLOR}\n"
+# .././test $BTCODES/mod-files/5-mod.m
 
+# ------------------------------------- #
+# UNIT TEST COMMENTS (Uncomment to use them)
+# ------------------------------------- #
 
+# printf "${CYAN}Test: ${BOLDMAG}COMMENTS ${RSTCOLOR}\n"
+# # gcc $FLAGS ../*.c -o test
+# printf "${YEL}File: ${BOLDMAG} 0-comments.m ${RSTCOLOR}\n"
+# .././test $BTCODES/comments-files/0-comments.m
+# printf "${YEL}File: ${BOLDMAG} 1-comments.m ${RSTCOLOR}\n"
+# .././test $BTCODES/comments-files/1-comments.m
+# printf "${YEL}File: ${BOLDMAG} 2-comments.m ${RSTCOLOR}\n"
+# .././test $BTCODES/comments-files/2-comments.m
+
+# ------------------------------------- #
+# UNIT TEST PCHAR (Uncomment to use them)
+# ------------------------------------- #
+
+# printf "${CYAN}Test opcode: ${BOLDMAG}PCHAR ${RSTCOLOR}\n"
+# # gcc $FLAGS ../*.c -o test
+# printf "${YEL}File: ${BOLDMAG} 0-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/0-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 1-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/1-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 2-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/2-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 3-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/3-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 4-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/4-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 5-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/5-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 6-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/6-pchar.m
+
+# ------------------------------------- #
+# UNIT TEST PCHAR (Uncomment to use them)
+# ------------------------------------- #
+
+# printf "${CYAN}Test opcode: ${BOLDMAG}PCHAR ${RSTCOLOR}\n"
+# # gcc $FLAGS ../*.c -o test
+# printf "${YEL}File: ${BOLDMAG} 0-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/0-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 1-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/1-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 2-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/2-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 3-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/3-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 4-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/4-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 5-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/5-pchar.m
+# printf "${YEL}File: ${BOLDMAG} 6-pchar.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pchar-files/6-pchar.m
+
+# ------------------------------------- #
+# UNIT TEST PSTR (Uncomment to use them)
+# ------------------------------------- #
+
+# printf "${CYAN}Test opcode: ${BOLDMAG}PSTR ${RSTCOLOR}\n"
+# # gcc $FLAGS ../*.c -o test
+# printf "${YEL}File: ${BOLDMAG} 0-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/0-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 1-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/1-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 2-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/2-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 3-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/3-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 4-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/4-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 5-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/5-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 6-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/6-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 7-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/7-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 8-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/8-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 9-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/9-pstr.m
+# printf "${YEL}File: ${BOLDMAG} 10-pstr.m ${RSTCOLOR}\n"
+# .././test $BTCODES/pstr-files/10-pstr.m
+
+# ------------------------------------- #
+# UNIT TEST ROTL (Uncomment to use them)
+# ------------------------------------- #
+
+# printf "${CYAN}Test opcode: ${BOLDMAG}ROTL ${RSTCOLOR}\n"
+# # gcc $FLAGS ../*.c -o test
+# printf "${YEL}File: ${BOLDMAG} 0-rotl.m ${RSTCOLOR}\n"
+# .././test $BTCODES/rotl-files/0-rotl.m
+# printf "${YEL}File: ${BOLDMAG} 1-rotl.m ${RSTCOLOR}\n"
+# .././test $BTCODES/rotl-files/1-rotl.m
+# printf "${YEL}File: ${BOLDMAG} 2-rotl.m ${RSTCOLOR}\n"
+# .././test $BTCODES/rotl-files/2-rotl.m
+# printf "${YEL}File: ${BOLDMAG} 3-rotl.m ${RSTCOLOR}\n"
+# .././test $BTCODES/rotl-files/3-rotl.m
+# printf "${YEL}File: ${BOLDMAG} 4-rotl.m ${RSTCOLOR}\n"
+# .././test $BTCODES/rotl-files/4-rotl.m
+# printf "${YEL}File: ${BOLDMAG} 5-rotl.m ${RSTCOLOR}\n"
+# .././test $BTCODES/rotl-files/5-rotl.m
+# printf "${YEL}File: ${BOLDMAG} 6-rotl.m ${RSTCOLOR}\n"
+# .././test $BTCODES/rotl-files/6-rotl.m
 
