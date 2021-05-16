@@ -281,4 +281,3 @@ BOLDMAG="\e[1m\e[95m"
 # .././test $BTCODES/rotl-files/5-rotl.m
 # printf "${YEL}File: ${BOLDMAG} 6-rotl.m ${RSTCOLOR}\n"
 # .././test $BTCODES/rotl-files/6-rotl.m
-

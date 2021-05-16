@@ -3,13 +3,9 @@
 
 ## Install
 
-compile your project with
+1. Clone the repo inside your project.
 ```console
-foo@bar$ make
-gcc -g -Wall -Wextra -Werror -pedantic ../*.c -o test
-./test ../bytecodes/prueba.m
-3
-2
+git clone https://github.com/JuanDAC/monty_test.git
 ```
 
 ## Create a new unittest
@@ -48,39 +44,47 @@ foo@bar[monty]$ tree .
 ```
 
 ## How to use
- - go to the test directory `cd test`
- - run the `test-all [monty-file]` script
 
-there are 2 ways to run the test-all script. The first one
+* Move to the folder.
+```
+cd monty_test
+```
+
+There are 2 ways to run the test-all script. The first one
 is without arguments
 
 ### Run without args
 ```console
 foo@bar$ ./test-all
 NO ARGS
-000.m: NO_REF
-001.m: NO_REF
-00-isdigit.m: NO_REF
-00.m: OK
-00-negativeDigit.m: NO_REF
-00-noFunction.m: NO_REF
-00-noLine.m: NO_REF
-00-nullFile.m: NO_REF
-00-pushAlone.m: NO_REF
-03-lessthan2A.m: OK
-03-lessthan2B.m: OK
-06.m: FAILED
-07.m: OK
-09.m: OK
+NO ARGS
+0-add.m: OK
+0-comments.m: OK
+0-div.m: OK
+0-mul.m: OK
+0-nop.m: OK
+0-pchar.m: FAILED.
+0-pint.m: OK
 ```
-it will show the files and the status code [OK/FAILED/NO_REF]
-if the output and the expected are equals the code should
-be `[OK]`
+<style>
+r { color: Red }
+m { color: Magenta }
+g { color: Green }
+</style>
+
+It will show the files and the status code.
+
+- <g>OK:</g> Expected result.
+- <r>FAILED:</r> It is not the expected result.
+- <m>NO_REF:</m> There is no file to be compared.
+
+If the output and the expected are equals the code should
+be <g>OK</g>
 
 If the output and the expected are diferents. The code
-should be `[FAILED]`
+should be <r>FAILED</r>.
 
-If the expected is not found The code sould be `[NO_REF]`
+If the expected is not found The code sould be <m>NO_REF</m>.
 
 ### Run with args
 If you run the command with a `<monty-file>` as argument
@@ -89,15 +93,15 @@ and show
  - `ARGS` in the first line
  - The file name and the test code in the second line
  - A horizonal line
- - [GOT] output of the `<monty-file>` througt your program
+ - _`[GOT]`_ output of the `<monty-file>` througt your program
  - The *Output* of program
- - [EXPECTED]
+ - _`[EXPECTED]`_
  - Expected output
 
 ```console
-foo@bar$ ./test-all 00.m
+foo@bar$ ./test-all 2-pupa.m
 ARGS
-00.m: OK
+2-pupa.m: OK
 ------------------
 [GOT]
 3
