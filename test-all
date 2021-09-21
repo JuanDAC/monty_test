@@ -13,7 +13,9 @@ RED="\e[91m"
 MAG="\e[35m"
 YEL="\e[33m"
 RSTCOLOR="\e[0m"
-mv bytecodes/.. .
+
+# Move bytecodes folder
+mv bytecodes/ ../.
 gcc -g -Wall -Wextra -Werror -pedantic ../*.c -o test
 
 
