@@ -18,6 +18,10 @@ RSTCOLOR="\e[0m"
 mv bytecodes/ ../.
 gcc -g -Wall -Wextra -Werror -pedantic ../*.c -o test
 
+# Create gitignore file
+echo "bytecodes/
+.gitignore" > ../.gitignore
+
 
 # input
 ARGV=$@
