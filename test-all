@@ -13,8 +13,8 @@ RED="\e[91m"
 MAG="\e[35m"
 YEL="\e[33m"
 RSTCOLOR="\e[0m"
-FLAGS="-g -Wall -Wextra -Werror -pedantic"
-gcc $(flags) ../*.c -o test
+mv bytecodes/.. .
+gcc -g -Wall -Wextra -Werror -pedantic ../*.c -o test
 
 
 # input
