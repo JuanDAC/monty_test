@@ -15,7 +15,8 @@ YEL="\e[33m"
 RSTCOLOR="\e[0m"
 
 # Move bytecodes folder
-mv bytecodes/ ../.
+# mv bytecodes/ ../.
+cp bytecodes/* ../bytecodes/.
 gcc -g -Wall -Wextra -Werror -pedantic ../*.c -o test
 
 # Create gitignore file
