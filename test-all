@@ -16,6 +16,7 @@ RSTCOLOR="\e[0m"
 
 # Move bytecodes folder
 # mv bytecodes/ ../.
+mkdir -p ../bytecodes/
 cp bytecodes/* ../bytecodes/.
 gcc -g -Wall -Wextra -Werror -pedantic ../*.c -o test
 
